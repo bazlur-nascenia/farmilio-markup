@@ -181,6 +181,12 @@ button {
   margin-left: 5px;
 }
 
+.navbar-header {
+  .navbar-toggle {
+    margin-top: 12px;
+  }
+}
+
 .forced-horizontal {
   .nav > li {
     float: right;
@@ -200,7 +206,7 @@ button {
   }
 
   .nav > li.de > a {
-    padding-top: 5px
+    padding-top: 8px
   }
 
 }
@@ -315,22 +321,16 @@ a.btn-primary {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .forced-horizontal .nav > li.contact {
     display: inline-block;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .forced-horizontal .nav > li.help {
     display: inline-block;
   }
-
-  .forced-horizontal .nav > li.de > a {
-    padding-top: 15px
-  }
-
-
 }
 
 @media (max-width: 768px) {
