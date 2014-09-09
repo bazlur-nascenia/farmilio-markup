@@ -1,0 +1,368 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*corporate colors*/
+
+$gray:        #B4B4B4;
+$light_brown: #806856;
+$dark_brown:  #493926;
+$red:         #D34044;
+$green:       #5CB461;
+$site_font:   'Helvetica Neue', 'Arial', 'sans-serif';
+$site_text_color:#000;
+$ash:         #EEEEEE;
+$dark_ash:    #B4B4B4;
+$field_border_width: 5px;
+
+@import "mixins";
+//@import "bootstrap-glyphicons";
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+body {
+  font: $site_font;
+  color: $site_text_color;
+
+}
+
+input[type="text"]{
+  background: $ash;
+  border: $field_border_width solid $dark_ash;
+}
+
+h1 {
+	color:$gray
+}
+
+.navbar-header .logo {
+  float: left;
+}
+
+.header-banner {
+  width: 970px;
+  text-align: center;
+  margin: 15px auto;
+
+  img {
+    width: 100%;
+    height: auto;
+
+  }
+}
+
+button {
+  @include border-radius(5px);
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.search-elements {
+  float: left;
+  width: 100%;
+
+  a,button,input {
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  .for-search {
+    float: right;
+  }
+
+  a.adv-search {
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 12px;
+    float: right;
+  } 
+
+  button {
+    height: 32px;
+    background: $green;
+    border: none;
+    color: #ffffff;
+    padding-top: 2px;
+  }
+
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+}
+
+.main-content,
+.cjs {
+  /*margin: 0.75%;
+  width: 98.5%;*/
+}
+
+.footer {
+  background: #B4B4B4;
+  float: left;
+  width: 100%;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.copyrights {
+  margin-top: 30px;
+}
+
+.main-content .message {
+  text-align: center;
+  color: $green;
+}
+
+.offers {
+  padding: 10px;
+  background: #f5f5f5;
+  height: 700px;
+  overflow-y: scroll;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+}
+
+.offer {
+  padding: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid #e2e2e2;
+
+}
+
+.offer .thumb img {
+  width: 100%;
+  height: auto;
+}
+
+.offer .thumb,
+.offer .icons {
+  width: 100%;
+}
+
+.offer .icons {
+  margin-top: 5px;
+  img {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+  }
+}
+
+.offer .icons img:last-child {
+  margin-right: 0;
+}
+
+.offer .info h3 {
+  margin-top: 0;
+}
+
+.navbar-header {
+  width: 100%;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 0;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-header button {
+  margin-left: 5px;
+}
+
+.forced-horizontal {
+  .nav > li {
+    float: right;
+    display: none;
+  }
+
+  float: right;
+
+  .nav > li.de {
+    display: inline-block;
+    float: left;
+  }
+
+  .nav > li.de img {
+    width: 40px;
+    height: auto;
+  }
+
+  .nav > li.de > a {
+    padding-top: 5px
+  }
+
+}
+
+.navbar-default {
+  background: $gray;
+}
+
+.page-links > div {
+  margin-bottom:10px
+}
+
+a {
+  color: $light_brown;
+}
+
+a:hover, a:focus {
+  color: $red
+}
+
+.footer ul {
+  padding-left: 10px;
+}
+
+.vertical-ad {
+  text-align: right;
+  img {
+    max-width: 150px;
+  }
+}
+
+.help .dropdown-menu {
+  left: -125px;
+}
+
+a.btn-primary:hover, a.btn-primary:focus, a.btn-primary:active, a.btn-primary.active, .open > a.dropdown-toggle.btn-primary {
+  background-color: $red;
+  border-color: $red;
+  color: #FFFFFF;
+}
+
+a.btn-primary {
+  background: $light_brown;
+  @include border-radius(5px);
+  border-color: $light_brown;
+}
+
+
+@media (max-width: 480px ) and (min-width: 321px) {
+
+}
+
+@media (max-width: 768px ) and (min-width: 481px) {
+
+
+}
+
+@media (max-width: 1024px ) and (min-width: 769px) {
+
+
+}
+
+@media (max-width: 1150px ) and (min-width: 1025px) {
+
+}
+
+@media (max-width: 320px) and (min-width: 241px) {
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .header-banner {
+    width: 768px;
+  }
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (min-width: 480px) {
+  .forced-horizontal .nav > li.login {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-content,
+  .cjs {
+    /*margin: 0.75%;
+    width: 98%;*/
+  }
+
+}
+
+@media (min-width: 600px) {
+  .forced-horizontal .nav > li.position {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 660px) {
+  .forced-horizontal .nav > li.share {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 769px) {
+  .forced-horizontal .nav > li.contact {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 769px) {
+  .forced-horizontal .nav > li.help {
+    display: inline-block;
+  }
+
+  .forced-horizontal .nav > li.de > a {
+    padding-top: 15px
+  }
+
+  .navbar-collapse.collapse ul {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-banner {
+    width: 80%;
+  }
+
+  .vertical-ad {
+    display: none
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar-header .logo img {
+    width: 100%;
+    height: auto;
+  }
+  .navbar-header .logo {
+    width: 40px;
+  }
+
+  .forced-horizontal .nav > li.de img {
+    width: 25px;
+    height: auto;
+  }
+
+  .navbar-brand {
+    font-size: 12px;
+    padding: 15px 0px 0px 5px;
+  }
+}
+
+@media (max-width: 240px) {
+  .forced-horizontal {
+    width: 40px;
+  }
+}
+
+
