@@ -3796,7 +3796,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   overflow-y: auto;
 }
 /*customized @media (min-width: 768px) {*/
-@media (min-width: 2500px) {
+@media (min-width: 12500px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -3935,7 +3935,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 20px;
 }
 /*customized @media (max-width: 767px) {*/
-@media (max-width: 2499px) {
+@media (max-width: 12499px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -3959,7 +3959,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 /*customized @media (min-width: 768px) {*/
-@media (min-width: 2500px) {
+@media (min-width: 12500px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -3976,7 +3976,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 /*customized @media (min-width: 768px) {*/
-@media (min-width: 2500px) {
+@media (min-width: 12500px) {
   .navbar-left {
     float: left !important;
   }
