@@ -249,6 +249,12 @@ a.btn-primary {
 }
 
 
+.navbar-collapse.collapse {
+  .footer-menu {
+    float: left;
+  }
+}
+
 @media (max-width: 480px ) and (min-width: 321px) {
 
 }
@@ -324,9 +330,7 @@ a.btn-primary {
     padding-top: 15px
   }
 
-  .navbar-collapse.collapse ul {
-    display: none;
-  }
+
 }
 
 @media (max-width: 768px) {
