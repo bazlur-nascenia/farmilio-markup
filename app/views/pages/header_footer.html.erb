@@ -17,36 +17,63 @@
         </button>
         <div class="forced-horizontal">
           <ul class="nav navbar-nav">
-            <li class="de"><a href="#"><%= image_tag "DE.png" %></a></li>
-            <li class="login"><a href="#">Login</a></li>
-            <li class="position"><a href="#">Position</a></li>
-            <li class="share"><a href="#">Share</a></li>
-            <li class="contact"><a href="#">Contact</a></li>
+            <li class="de">
+              <a href="#"><img src="/assets/DE.png" alt="De"></a>
+            </li>
+            <li class="login">
+              <a href="/users/sign_in?locale=de">Login</a>
+            </li>
+            <li class="position">
+              <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="position">Position<span class="caret"></span></a>
+              <ul aria-labelledby="position" role="menu" class="dropdown-menu">
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem"><span title="translation missing: de.home.header.current_location" class="translation_missing">Current Location</span></a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem"><span title="translation missing: de.home.header.Get automatically" class="translation_missing">Get Automatically</span></a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem"><span title="translation missing: de.home.header.Enter manually" class="translation_missing">Enter Manually</span></a></li>
+              </ul>
+            </li>
+            <li class="share">
+              <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="share">Share<span class="caret"></span></a>
+              <ul aria-labelledby="share" role="menu" class="dropdown-menu">
+                <li role="presentation"><a href="http://localhost:3001/#" tabindex="-1" role="menuitem">News-blog</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Newsletter</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Recommend</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Facebook</a></li>
+              </ul>
+            </li>
+            <li class="contact">
+              <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="http://localhost:3001/#" id="contact"><span title="translation missing: de.home.header.contact" class="translation_missing">Contact</span><span class="caret"></span></a>
+              <ul aria-labelledby="contact" role="menu" class="dropdown-menu">
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">General</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Request product</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Technical problem</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Report misbehaviour</a></li>
+              </ul>
+            </li>
             <li class="help dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Help <span class="caret"></span></a>
-              <ul role="menu" class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Version &amp; Entwicklung</a></li>
               </ul>
             </li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Help <span class="caret"></span></a>
-              <ul role="menu" class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
+            <li class="about-farmilio">
+              <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="about-farmilio"><span title="translation missing: de.home.footer.about_fermilio" class="translation_missing">About Fermilio</span> <span class="caret"></span></a>
+              <ul aria-labelledby="about-farmilio" role="menu" class="dropdown-menu">
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">News-blog</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Facebook</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Imprint</a></li>
               </ul>
             </li>
+            <li class="terms-and-conditions">
+              <a data-toggle="dropdown" class="dropdown-toggle" role="button" id="t-and-c" href="#">Terms and Conditions<span class="caret"></span></a>
+              <ul aria-labelledby="t-and-c" role="menu" class="dropdown-menu">
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">General Terms ans Conditions</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Service Terms ans Conditions</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Privacy and Data Protection Policy</a></li>
+              </ul>
+            </li>
+
           </ul>
         </div>
         <div class="logo">
@@ -74,7 +101,30 @@
               <li><a href="#">One more separated link</a></li>
             </ul>
           </li>
+          <li class="footer-menu">
 
+          <li class="dropdown about-farmilio">
+            <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">About Farmilio <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Farmilio</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Facebook</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Imprint</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="dropdown terms-and-conditions">
+            <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Terms and Conditions<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">General Terms ans Conditions</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Service Terms ans Conditions</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Privacy and Data Protection Policye</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+            </ul>
+          </li>
+
+          </li>
         </ul>
         <!--<form class="navbar-form navbar-left" role="search">
           <div class="form-group">

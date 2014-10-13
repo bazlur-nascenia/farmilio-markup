@@ -5,7 +5,7 @@
 $window = $( window ).width();
 
 
-$( window ).resize(function() {
+$( document ).ready(function() {
     if($window > 479) {
         $('.navbar-collapse.collapse li.login').css('display','none');
     }

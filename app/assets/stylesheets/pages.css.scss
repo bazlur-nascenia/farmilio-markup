@@ -73,6 +73,10 @@ button {
 
   .for-search {
     float: right;
+
+    form {
+      float: left;
+    }
   }
 
   a.adv-search {
@@ -80,7 +84,7 @@ button {
     margin-right: 5px;
     margin-top: 12px;
     float: right;
-  } 
+  }
 
   button {
     height: 32px;
@@ -209,6 +213,15 @@ button {
     padding-top: 8px
   }
 
+  .navbar-nav {
+    margin-right: 30px;
+  }
+
+}
+
+#new_user div.field_with_errors {
+  float: left;
+  margin-right: 12px;
 }
 
 .navbar-default {
@@ -254,12 +267,12 @@ a.btn-primary {
   border-color: $light_brown;
 }
 
-
 .navbar-collapse.collapse {
   .footer-menu {
     float: left;
   }
 }
+
 
 @media (max-width: 480px ) and (min-width: 321px) {
 
